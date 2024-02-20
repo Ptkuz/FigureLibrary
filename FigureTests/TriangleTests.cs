@@ -27,5 +27,12 @@ namespace FigureTests
             triangle1.SideOne = 13;
             Assert.Equal(32.18, triangle1.Area(), 0.01);
         }
+
+        [Fact]
+        public void CheckVersatile() 
+        {
+            Triangle triangle = new Triangle(12, 5, 13);
+            Assert.True(triangle.CheckVersatile());
+        }
     }
 }
